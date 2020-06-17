@@ -4,6 +4,10 @@ body {
   background-size: 100% 100%;
 }
 
+.container {
+  width: 90% !important;
+}
+
 .rootContainer {
   display: flex;
   justify-content: center;
@@ -11,7 +15,7 @@ body {
 
 .grid {
   background-color: whitesmoke;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(64, 133, 173, 0.9);
   border: solid;
   border-color: black;
   border-width: 2%;
@@ -31,4 +35,44 @@ body {
 
 .pointing {
   margin-top: 3.5% !important;
+  margin-right: 4% !important;
+  /* width: fit-content; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.nameHeader {
+  font-size: 500%;
+  text-shadow: 2px 2px white;
+}
+
+.jobHeader {
+  font-size: 40px;
+  padding: 5%;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+}
+
+.hireButton {
+  font-size: 30px;
+  width: 20%;
+  height: 80px;
+  border-radius: 15%;
+  background-color: red;
+  border-color: white;
+  color: white;
+  margin-right: 15%;
+}
+
+.portfolioItem {
+  height: 200px;
+}
+
+.projectPicture {
+  border-radius: 5%;
+  width: 100px;
+  height: 100px;
 }
