@@ -6,7 +6,7 @@ import Portfolio from "../pages/Portfolio";
 
 const App = () => {
   return (
-    <div className="ui container">
+    <div>
       <BrowserRouter>
         <div>
           <Switch>

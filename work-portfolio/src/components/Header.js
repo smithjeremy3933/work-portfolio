@@ -4,16 +4,18 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="ui secondary pointing menu">
-      <Link to="/" className="item">
-        Home
-      </Link>
-      <Link to="/portfolio" className="item">
-        Portfolio
-      </Link>
-      <Link to="/" className="item">
-        Contact
-      </Link>
+    <div className="ui container">
+      <div className="ui large secondary inverted pointing menu">
+        <Link to="/" className="item headerLink">
+          Home
+        </Link>
+        <Link to="/portfolio" className="item headerLink">
+          Portfolio
+        </Link>
+        <Link to="/" className="item headerLink">
+          Contact
+        </Link>
+      </div>
     </div>
   );
 };
