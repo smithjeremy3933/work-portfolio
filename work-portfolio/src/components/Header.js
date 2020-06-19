@@ -9,12 +9,12 @@ const Header = () => {
         <Link to="/" className="item headerLink">
           Home
         </Link>
-        <Link to="/portfolio" className="item headerLink">
-          Portfolio
-        </Link>
-        <Link to="/" className="item headerLink">
-          Contact
-        </Link>
+        <a
+          href="https://github.com/smithjeremy3933"
+          className="item headerLink"
+        >
+          Github
+        </a>
       </div>
     </div>
   );

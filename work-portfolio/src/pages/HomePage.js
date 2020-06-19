@@ -1,18 +1,30 @@
 import React from "react";
 import Header from "../components/Header";
 import portfolioPic from "./portfolioPic.PNG";
+import gamerVisionArt from "./gamerVisionArt.png";
+import towerDefenseArt from "./towerDefensePic2.PNG";
+import liriArt from "./liriArt.png";
+import strategyArt from "./strategyArt.png";
 
 class HomePage extends React.Component {
+  scrollToBottom() {
+    window.scrollTo(0, document.body.scrollHeight / 3.5);
+  }
+
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="pusher">
         <div
-          style={{ height: 700 }}
+          style={{ height: 800 }}
           className="ui inverted vertical masthead center aligned segment"
         >
           <Header />
           <div className="ui container topContainer">
-            <div className="ui grid">
+            <div className="ui stackable grid">
               <div className="ui row">
                 <div className="eight wide column">
                   <img
@@ -23,26 +35,22 @@ class HomePage extends React.Component {
                 </div>
                 <div className="eight wide column">
                   <div className="ui container topInfoContainer">
-                    <h1
-                      style={{ fontSize: 70 }}
-                      className="ui inverted header nameHeaderText"
-                    >
-                      Jeremy Smith
-                    </h1>
-                    <h2 style={{ fontSize: 40 }}>
+                    <h1 className="nameHeaderText">Jeremy Smith</h1>
+                    <h2 className="jobHeader">
                       Software Developer/ Chemistry Technician
                     </h2>
                     <div
+                      onClick={this.scrollToBottom}
                       style={{ marginTop: 30 }}
                       className="ui huge primary button"
                     >
                       Check Out Projects!
                       <i className="right arrow icon" />
                     </div>
-                    <h3 style={{ fontSize: 30 }}>
+                    <h3 className="contactText">
                       e-mail: smithjeremy3933@gmail.com
                     </h3>
-                    <h3 style={{ fontSize: 30 }}>cell: (925)-518-6483</h3>
+                    <h3 className="contactText">cell: (925)-518-6483</h3>
                   </div>
                 </div>
               </div>
@@ -65,7 +73,7 @@ class HomePage extends React.Component {
                 <div className="six wide column">
                   <img
                     className="projectPicture"
-                    src={portfolioPic}
+                    src={towerDefenseArt}
                     alt="Portfolio"
                   />
                 </div>
@@ -78,15 +86,17 @@ class HomePage extends React.Component {
                   <h5 className="descriptionText">
                     A table-top tower defense game inspired by the tower defense
                     (TD) games I used to play on Warcraft III: Reign of Chaos
-                    when I was kid. This game features some unique towers I made
-                    through Blender and a User Interface I made through Gimp.
-                    This particular TD is an elemental tower defense where each
-                    tower has a unique ability that sets it apart from other
-                    towers in the game. The Fire Tower is the damage dealer, the
-                    Ice Tower slows enemies, while the lightning tower unleashes
-                    splash damage upon your enemies. Tower's damage can be
-                    upgraded, so players can strategically upgrade towers in
-                    certain spots around the map.
+                    when I was kid. I used this game and Wilmer Lin's
+                    "Pathfinding in Unity" Udemy series to start learning about
+                    pathfinding algorithms. This game features some unique
+                    towers I made through Blender and a User Interface I made
+                    through Gimp. This particular TD is an elemental tower
+                    defense where each tower has a unique ability that sets it
+                    apart from other towers in the game. The Fire Tower is the
+                    damage dealer, the Ice Tower slows enemies, while the
+                    lightning tower unleashes splash damage upon your enemies.
+                    Tower's damage can be upgraded, so players can strategically
+                    upgrade certain towers in certain spots around the map.
                   </h5>
                 </div>
               </div>
@@ -95,7 +105,7 @@ class HomePage extends React.Component {
                 <div className="six wide column">
                   <img
                     className="projectPicture"
-                    src={portfolioPic}
+                    src={gamerVisionArt}
                     alt="Portfolio"
                   />
                 </div>
@@ -108,7 +118,7 @@ class HomePage extends React.Component {
                     Dependencies: MERN stack, axios, lodash, react-router-dom,
                     redux, react-redux, redux-form, redux-thunk, bcrypt-nodejs,
                     jwt-simple, mogoose, nodemon, passport, passport-jwt,
-                    passport-local
+                    passport-local, Semantic-UI
                   </h5>
                   <h5 className="descriptionText">
                     An app I am designing for game developers to manage the many
@@ -128,7 +138,7 @@ class HomePage extends React.Component {
                 <div className="six wide column">
                   <img
                     className="projectPicture"
-                    src={portfolioPic}
+                    src={liriArt}
                     alt="Portfolio"
                   />
                 </div>
@@ -141,7 +151,7 @@ class HomePage extends React.Component {
                   </a>
                   <div className="ui divider"></div>
                   <h5>
-                    Dependencies: axios, dotenv, inquirer, moment,
+                    Dependencies: axios, dotenv, inquirer, moment, node.js,
                     node-spotify-api
                   </h5>
                   <h5 className="descriptionText">
@@ -162,7 +172,7 @@ class HomePage extends React.Component {
                 <div className="six wide column">
                   <img
                     className="projectPicture"
-                    src={portfolioPic}
+                    src={strategyArt}
                     alt="Portfolio"
                   />
                 </div>
@@ -197,6 +207,14 @@ class HomePage extends React.Component {
               <div className="seven wide column">
                 <h4 className="ui inverted header">Thank You For Your Time</h4>
                 <p>Thank you for taking the time to look at my portfolio.</p>
+                <div
+                  onClick={this.scrollToTop}
+                  style={{ marginTop: 30 }}
+                  className="ui huge primary button"
+                >
+                  Back to Top
+                  <i className="right arrow icon" />
+                </div>
               </div>
             </div>
           </div>
