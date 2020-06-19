@@ -183,7 +183,7 @@ class HomePage extends React.Component {
                   <div className="ui divider"></div>
                   <h5>Dependencies: unity</h5>
                   <h5 className="descriptionText">
-                    A strategy game I am currently developing that I want to be
+                    A strategy game I am currently developing that I wish to be
                     in the style of Fire Emblem and X-COM, two of my favorite
                     childhood games.
                   </h5>
