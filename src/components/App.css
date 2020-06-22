@@ -1,0 +1,167 @@
+body {
+  background: url("science.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.headerLink {
+  color: white;
+}
+
+.topContainer {
+  width: 70% !important;
+}
+
+.innerTopBox {
+  width: 900px !important;
+}
+
+.topInfoContainer {
+  margin-top: 5% !important;
+}
+
+.portfolioPicture {
+  border-radius: 5%;
+  width: 85%;
+  height: 85%;
+  margin-top: 5% !important;
+  margin-left: 5% !important;
+}
+
+.nameHeaderText {
+  font-size: 600%;
+}
+
+.jobHeader {
+  font-size: 300%;
+  padding: 4%;
+}
+
+.contactText {
+  font-size: 190%;
+}
+
+.projectPicture {
+  border-radius: 5%;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+}
+
+.descriptionText {
+  font-size: 100%;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 1260px) {
+  .portfolioPicture {
+    border-radius: 5%;
+    width: 86%;
+    height: 84%;
+    margin-top: 5% !important;
+  }
+
+  .nameHeaderText {
+    font-size: 550%;
+  }
+
+  .jobHeader {
+    font-size: 270%;
+    padding: 4%;
+  }
+
+  .contactText {
+    font-size: 170%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolioPicture {
+    border-radius: 5%;
+    width: 90%;
+    height: 65%;
+    margin-top: 5% !important;
+  }
+
+  .nameHeaderText {
+    font-size: 600%;
+  }
+
+  .jobHeader {
+    font-size: 270%;
+    padding: 4%;
+  }
+
+  .contactText {
+    font-size: 170%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolioPicture {
+    border-radius: 5%;
+    width: 90%;
+    height: 63%;
+    margin-top: 5% !important;
+  }
+
+  .nameHeaderText {
+    font-size: 500%;
+  }
+
+  .jobHeader {
+    font-size: 200%;
+    padding: 4%;
+  }
+
+  .contactText {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolioPicture {
+    border-radius: 5%;
+    width: 40%;
+    height: auto;
+    margin-top: 5% !important;
+  }
+
+  .topInfoContainer {
+    margin-top: 0% !important;
+  }
+
+  .nameHeaderText {
+    font-size: 250%;
+  }
+
+  .jobHeader {
+    font-size: 170%;
+    padding: 4%;
+  }
+
+  .contactText {
+    font-size: 130%;
+  }
+
+  .descriptionText {
+    font-size: 100%;
+    line-height: 120%;
+  }
+
+  .projectPicture {
+    border-radius: 5%;
+    width: 90%;
+    height: auto;
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolioPicture {
+    border-radius: 5%;
+    width: 80%;
+    height: auto;
+    margin-top: 5% !important;
+  }
+}
