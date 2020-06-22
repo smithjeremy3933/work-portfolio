@@ -15,6 +15,10 @@ class HomePage extends React.Component {
     window.scrollTo(0, 0);
   }
 
+  openInNewWindow() {
+    window.open("https://github.com/smithjeremy3933");
+  }
+
   render() {
     return (
       <div className="pusher">
@@ -71,11 +75,13 @@ class HomePage extends React.Component {
             <div className="ui divided grid">
               <div className="ui row">
                 <div className="six wide column">
-                  <img
-                    className="projectPicture"
-                    src={towerDefenseArt}
-                    alt="Portfolio"
-                  />
+                  <a href="https://github.com/smithjeremy3933/Tower-Defense">
+                    <img
+                      className="projectPicture"
+                      src={towerDefenseArt}
+                      alt="Portfolio"
+                    />
+                  </a>
                 </div>
                 <div className="ten wide column">
                   <a href="https://github.com/smithjeremy3933/Tower-Defense">
@@ -103,11 +109,13 @@ class HomePage extends React.Component {
               <div className="ui divider"></div>
               <div className="ui row">
                 <div className="six wide column">
-                  <img
-                    className="projectPicture"
-                    src={gamerVisionArt}
-                    alt="Portfolio"
-                  />
+                  <a href="https://github.com/smithjeremy3933/Gamer-Vision">
+                    <img
+                      className="projectPicture"
+                      src={gamerVisionArt}
+                      alt="Portfolio"
+                    />
+                  </a>
                 </div>
                 <div className="ten wide column">
                   <a href="https://github.com/smithjeremy3933/Gamer-Vision">
@@ -136,11 +144,13 @@ class HomePage extends React.Component {
               <div className="ui divider"></div>
               <div className="ui row">
                 <div className="six wide column">
-                  <img
-                    className="projectPicture"
-                    src={liriArt}
-                    alt="Portfolio"
-                  />
+                  <a href="https://github.com/smithjeremy3933/Liri">
+                    <img
+                      className="projectPicture"
+                      src={liriArt}
+                      alt="Portfolio"
+                    />
+                  </a>
                 </div>
                 <div className="ten wide column">
                   <a href="https://github.com/smithjeremy3933/Liri">
@@ -170,11 +180,13 @@ class HomePage extends React.Component {
               <div className="ui divider"></div>
               <div className="ui row">
                 <div className="six wide column">
-                  <img
-                    className="projectPicture"
-                    src={strategyArt}
-                    alt="Portfolio"
-                  />
+                  <a href="https://github.com/smithjeremy3933/Turn-Based-Strategy-Game">
+                    <img
+                      className="projectPicture"
+                      src={strategyArt}
+                      alt="Portfolio"
+                    />
+                  </a>
                 </div>
                 <div className="ten wide column">
                   <a href="https://github.com/smithjeremy3933/Turn-Based-Strategy-Game">
@@ -198,11 +210,17 @@ class HomePage extends React.Component {
             <div className="ui stackable inverted divided equal height stackable grid">
               <div className="six wide column">
                 <h4 className="ui inverted header">Social Media</h4>
-                <div className="ui inverted link list">
-                  <a href="https://github.com/smithjeremy3933" className="item">
-                    Github
-                  </a>
-                </div>
+                <button
+                  style={{ width: 130 }}
+                  className="ui inverted button"
+                  onClick={this.openInNewWindow}
+                >
+                  Github
+                  <i
+                    style={{ marginLeft: 11 }}
+                    className="large github icon"
+                  ></i>
+                </button>
               </div>
               <div className="seven wide column">
                 <h4 className="ui inverted header">Thank You For Your Time</h4>
